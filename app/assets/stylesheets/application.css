@@ -9,6 +9,35 @@
  * Consider organizing styles into separate files for maintainability.
  */
 
- .top {
-  
+ body {
+  margin: 20px;
+ }
+ .top p {
+  margin: 30px;
+ }
+
+ .top a {
+  margin: 30px;
+ }
+
+ .book-table td{
+  padding: 5px; 
+ }
+
+ .form-actions {
+  display: block;
+  margin-top: 20px; 
+ }
+
+.links {
+  margin-top: 20px;
+}
+
+ .book-show p {
+  margin: 30px;
+ }
+
+ .flash {
+  color: green;
+  margin:30px;
  }

@@ -1,4 +1,4 @@
-<h1>Editing Book</h1>
+<h1><strong>Editing Book</strong></h1>
 
 
 
@@ -18,10 +18,12 @@
 
   <h4>Body</h4>
   <%= f.text_area :body %>
-
+<div class="form-actions">
   <%= f.submit "Update Book" %>
+</div>
 
+<div class="links"></div>
   <%= link_to "Show", book_path(@book)%> |
   <%= link_to "Back", books_path %>
-
+</div>
   <% end %>

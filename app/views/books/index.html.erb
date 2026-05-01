@@ -1,5 +1,5 @@
 <h1> Books</h1>
-  <table>
+  <table class="book-table">
     <thead>
       <tr>
         <th>Title</th>
@@ -37,7 +37,8 @@
 
   <p> Body</p>
   <%= f.text_area :body %>
-
+  
+<div class="form-actions">
   <%= f.submit 'Create Book' %>
-
+</div>
 <% end %>
