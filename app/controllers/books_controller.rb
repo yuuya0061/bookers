@@ -1,6 +1,4 @@
 class BooksController < ApplicationController
-  def new
-  end
 
   def index
     @books = Book.all
@@ -18,7 +16,6 @@ class BooksController < ApplicationController
     end
   end
 
-
   def show
     @book = Book.find(params[:id])
   end
@@ -33,9 +30,8 @@ class BooksController < ApplicationController
       flash[:notice] = "The post was updated successfully"
       redirect_to book_path(@book.id)
     else
-      render :edit,status: :unprocessable_entity
+      render :edit, status: :unprocessable_entity
     end
-
   end
 
   def destroy
@@ -44,8 +40,6 @@ class BooksController < ApplicationController
     flash[:notice] = "The post was deleted successfully"
     redirect_to books_path
   end
-
-
 
   private
   def book_params
